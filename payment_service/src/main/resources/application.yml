@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: payment-service
+#  profiles:
+#    active: dev
+
+server:
+  port: 8900
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

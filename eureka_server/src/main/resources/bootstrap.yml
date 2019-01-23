@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+      failtFast: true #look for the config server while opening eureka server, if config-server is not running shut the process off
+      label: "" #the branch what config server serves (generally master branch)
+
+  output:
+    ansi:
+      enabled: ALWAYS
+
+
+
+
+

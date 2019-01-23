@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        bootstrap: true # config first or eureka first? config server should be started before eureka server bcs all instances may retrieve their props through it!!!
+        git:
+          uri: https://github.com/mustafaguven/config-data
+          force-pull: true
+
+#info:
+#  build:
+#    name: @application.name@
+#    group: @project.groupId@
+#    artifact: @project.artifactId@
+#    version: @project.version@

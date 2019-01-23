@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: catalog-service
+
+server:
+  port: 8800
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

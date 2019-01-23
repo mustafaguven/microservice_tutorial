@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zuul-proxy
+
+
+server:
+  port: 8400
+
+
